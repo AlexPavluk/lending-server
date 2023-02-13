@@ -8,7 +8,7 @@ import fileUpload from 'express-fileupload';
 import multer from 'multer';
 
 const PORT = 7255;
-const DB_URL = `mongodb+srv://alex:alex@cluster0.kluon.mongodb.net/?retryWrites=true&w=majority`;
+const DB_URL = process.env.MONGO_URI;
 
 
 const app = express();
